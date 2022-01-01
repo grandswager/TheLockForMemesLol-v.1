@@ -1,0 +1,167 @@
+<h1><i>THE LOCK</i></h1>
+<a onclick="getHint();">
+  <button id="get-hint">
+    GET HINT
+  </button>
+</a>
+<a onclick="closeHint();">
+  <button id="close-hint">
+    CLOSE HINT
+  </button>
+</a>
+<br>
+<div id="hint">
+  <span>-</span>
+<div id="hint-box">
+  The quick brown fox jumps over the lazy dog.
+</div>
+</div>
+<br><br>
+<label>#1 - <sup>4 letters, all caps</sup></label><br>
+<input type="text" placeholder="4 letters ALL CAPS" required id="lock1" /><h5 id="lock1txt" style="display:none;">CORRECT</h5><br><br>
+<label>#2 - <sup>Two words, all caps</sup></label><br>
+<input type="text" placeholder="Two words, ALL CAPS" required id="lock2" /><h5 id="lock2txt" style="display:none;">CORRECT</h5><br><br>
+<label>#3 - <sup>I am a card, but I'm not made of paper.</sup></label><br>
+<input type="text" placeholder="What am I?" required id="lock3" /><h5 id="lock3txt" style="display:none;">CORRECT</h5><br><br>
+<label>#4 - <sup>3 digit number</sup></label><br>
+<input type="text" placeholder="What is the 3 digit number?" required id="lock4" /><h5 id="lock4txt" style="display:none;">CORRECT</h5><br><br>
+<label>#5 - <sup>6 letters, all caps</sup></label><br>
+<input type="text" placeholder="6 letters ALL CAPS" required id="lock5" /><h5 id="lock5txt" style="display:none;">CORRECT</h5><br><br>
+<button title="javascript:void(0);" onclick="check()" id="btnSubmit">Check / Submit...</button>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800");
+
+@import url("https://fonts.googleapis.com/css2?family=Volkhov");
+
+ 
+    body, input, html{
+    text-align: center;
+      font-family:Volkhov;
+  }
+  #btnSubmit:hover{
+    cursor: pointer;
+  }
+  
+  
+body {
+      text-shadow: 2px 2px 4px #228B22;
+  color:#2CB02C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+  font-family:Montserrat;
+}
+
+button {
+  font-family:Segoe UI;
+  background:black;
+  color:#2CB02C;
+  border:2px solid green;
+  border-radius:25px;
+  cursor:pointer;
+}
+
+#hint-box {
+  border:2px solid green;
+  padding:5px 10px;
+}
+
+#hint, #close-hint {display:none};
+
+</style>
+<script>
+  var lock1 = document.getElementById("lock1");
+  var lock2 = document.getElementById("lock2");
+  var lock3 = document.getElementById("lock3");
+  var lock4 = document.getElementById("lock4");
+  var lock5 = document.getElementById("lock5");
+  var escaped = "false";
+  var randommisnehtgeyahdsfw = Math.floor(Math.random() * 286456271246565471635472546237462536472534672453);
+
+  function check() {
+    if (lock1.value === "MEME") {
+      document.getElementById("lock1txt").style.display = "block";
+      document.getElementById("lock1txt").innerHTML = "CORRECT";
+    } else {
+      document.getElementById("lock1txt").style.display = "block";
+      document.getElementById("lock1txt").innerHTML = "WRONG";
+    }
+    if (lock2.value === "ARTIFICIAL INTELLIGENCE") {
+      document.getElementById("lock2txt").style.display = "block";
+      document.getElementById("lock2txt").innerHTML = "CORRECT";
+    } else {
+      document.getElementById("lock2txt").style.display = "block";
+      document.getElementById("lock2txt").innerHTML = "WRONG";
+    }
+    if (lock3.value === "MEMORY CARD") {
+      document.getElementById("lock3txt").style.display = "block";
+      document.getElementById("lock3txt").innerHTML = "CORRECT";
+    } else {
+      document.getElementById("lock3txt").style.display = "block";
+      document.getElementById("lock3txt").innerHTML = "WRONG";
+    }
+
+    if (lock4.value === "404") {
+      document.getElementById("lock4txt").style.display = "block";
+      document.getElementById("lock4txt").innerHTML = "CORRECT";
+    } else {
+      document.getElementById("lock4txt").style.display = "block";
+      document.getElementById("lock4txt").innerHTML = "WRONG";
+    }
+
+    if (lock5.value === "BIONIC") {
+      document.getElementById("lock4txt").style.display = "block";
+      document.getElementById("lock5txt").innerHTML = "CORRECT";
+    } else {
+      document.getElementById("lock5txt").style.display = "block";
+      document.getElementById("lock5txt").innerHTML = "WRONG";
+    }
+    
+    //If all right
+    if (lock1.value === "MEME" && lock2.value === "ARTIFICIAL INTELLIGENCE" && lock3.value === "MEMORY CARD" && lock4.value === "404" && lock5.value === "BIONIC") {
+      //window.open("https://sites.google.com/gapps.yrdsb.ca/actualfunescaperoom/good-ending")
+
+//SUB TO BENNY FOR HINTS AND INFO NOW!
+
+escaped = "true";
+window.open(/*htppsdhs*/`https://bit.ly/2ZLW7av?authuser=true&falseEnter=false&FakeNumberID=0&SafariBroswer=NotSupported&RandomMizedNumber=${randommisnehtgeyahdsfw}&MooseTrackNumber=${randommisnehtgeyahdsfw}&PreventsExpolits=true`);
+    }
+  }
+  
+  function getHint() {
+    let getHint = document.querySelector('#get-hint'),
+        hint = document.querySelector('#hint'),
+        closeHint = document.querySelector('#close-hint');
+    
+    hint.style.display = "inline-block";
+    closeHint.style.display = "inline-block";
+    getHint.style.display = "none";
+  }
+  function closeHint() {
+    let closeHint = document.querySelector('#close-hint'),
+        hint = document.querySelector('#hint'),
+        getHint = document.querySelector('#get-hint');
+    
+    hint.style.display = "none";
+    getHint.style.display = "inline-block";
+    closeHint.style.display = "none";
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log("man sub to benny");
+</script>
